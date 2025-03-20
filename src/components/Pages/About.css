@@ -1,0 +1,103 @@
+
+/* About Page Styling */
+.about-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #1e1e2f, #25253a);
+    color: #ffffff;
+    padding: 2rem;
+    text-align: center;
+  }
+  
+  /* About Content Card */
+  .about-card {
+    background: rgba(255, 255, 255, 0.1);
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    max-width: 700px;
+    backdrop-filter: blur(10px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .about-card:hover {
+    transform: scale(1.02);
+    box-shadow: 0 6px 14px rgba(255, 255, 255, 0.2);
+  }
+  
+  /* Title Styling */
+  .about-title {
+    font-size: 2.8rem;
+    font-weight: bold;
+    margin-bottom: 1rem;
+    color: #fbbf24; /* Yellow */
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    animation: fadeIn 1s ease-in-out;
+  }
+  
+  /* Paragraph Styling */
+  .about-text {
+    font-size: 1.2rem;
+    color: #e0e0e0; /* Light gray */
+    max-width: 600px;
+    line-height: 1.6;
+    opacity: 0.9;
+    animation: fadeIn 1.5s ease-in-out;
+  }
+  
+  /* Highlighted Words */
+  .about-text strong {
+    color: #f97316; /* Orange */
+  }
+  
+  /* Button for Extra Interaction */
+  .about-button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #fff;
+    background: #f97316;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background 0.3s ease-in-out, transform 0.2s ease-in-out;
+  }
+  
+  .about-button:hover {
+    background: #e65c00;
+    transform: scale(1.05);
+  }
+  
+  /* Fade-in Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-10px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .about-title {
+      font-size: 2rem;
+    }
+    
+    .about-text {
+      font-size: 1rem;
+      max-width: 90%;
+    }
+  
+    .about-card {
+      padding: 1.5rem;
+    }
+  }
+  
